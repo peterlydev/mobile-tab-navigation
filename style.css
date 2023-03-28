@@ -55,3 +55,49 @@ hr {
 .phone {
     display: none;
 }
+
+@media screen and (max-width: 640px) {
+    .desktop {
+        display: none;
+    }
+
+    .phone {
+        display: flex;
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .phone ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .phone ul li {
+        cursor: pointer;
+        margin: 5px 10px;
+        opacity: 0.2;
+    }
+
+    .phone ul li:hover {
+        opacity: 1;
+    }
+
+    .phone ul li a {
+        text-decoration: none;
+        color: #fff;
+        margin-left: 10px;
+    }
+
+    hr {
+        position: absolute;
+        bottom: 50px;
+        width: 100%;
+        color: #fff;
+    }
+}
+
+
+
+
